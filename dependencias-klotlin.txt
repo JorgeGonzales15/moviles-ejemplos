@@ -1,0 +1,37 @@
+retrofit
+com.squareup.retrofit2
+
+converter-gson
+com.squareup.retrofit2
+
+landscapist-glide
+com.github.skydoves
+
+navigation-compose
+androidx.navigation
+
+room-compiler
+androidx.room as annotationProcessor
+
+room-runtime
+androidx.room
+
+en build.gradle.kts:
+
+plugins {
+    id("org.jetbrains.kotlin.kapt")
+}
+
+dependencies {
+val roomVersion = "2.6.1"
+    kapt("androidx.room:room-compiler:$roomVersion")
+}
+
+PERMISO:
+<uses-permission android:name="android.permission.INTERNET"/>
+
+PARA MYAPPLICATION en manifest dentro de <application:
+android:name=".MyApplication"
+
+otros:
+material-icons-extended
